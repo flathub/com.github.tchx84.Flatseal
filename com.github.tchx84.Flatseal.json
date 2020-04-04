@@ -54,8 +54,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v1.5.1",
-                    "commit": "7c74f9dd2079fc61149f42dc9dc2a7b190259881"
+                    "tag": "v1.5.2",
+                    "commit": "0d05ba6f809e415d60d16ec10b9c62cfd4e60ed3"
                 }
             ]
         }
