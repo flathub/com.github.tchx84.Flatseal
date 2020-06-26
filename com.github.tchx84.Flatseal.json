@@ -9,9 +9,11 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--device=dri",
         "--filesystem=/var/lib/flatpak/app:ro",
         "--filesystem=~/.local/share/flatpak/app:ro",
-        "--filesystem=~/.local/share/flatpak/overrides:create"
+        "--filesystem=~/.local/share/flatpak/overrides:create",
+        "--talk-name=org.gnome.Software"
     ],
     "cleanup": [
         "/include",
@@ -48,14 +50,37 @@
             ]
         },
         {
+            "name": "appstream-glib",
+            "buildsystem": "meson",
+            "config-opts": [
+		"-Ddep11=false",
+		"-Dbuilder=false",
+		"-Drpm=false",
+		"-Dalpm=false",
+		"-Dfonts=false",
+		"-Dstemmer=false",
+		"-Dman=false",
+		"-Dstemmer=false",
+		"-Dgtk-doc=false",
+		"-Dintrospection=true"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_17.tar.gz",
+                    "sha256": "cb612c9e634275e574fa639737cf63711358cd10b9d0d377f70025653fefdd16"
+                }
+            ]
+        },
+        {
             "name": "flatseal",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v1.5.3",
-                    "commit": "fdcff417608bc602a99cb2c939fc8fec8c710df4"
+                    "tag": "v1.6.0",
+                    "commit": "6e03a84bdcc0cf0e0476d97704bc39b83871cddc"
                 }
             ]
         }
