@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.tchx84.Flatseal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "com.github.tchx84.Flatseal",
@@ -11,8 +11,8 @@
         "--socket=wayland",
         "--device=dri",
         "--filesystem=/var/lib/flatpak/app:ro",
-        "--filesystem=~/.local/share/flatpak/app:ro",
-        "--filesystem=~/.local/share/flatpak/overrides:create",
+        "--filesystem=xdg-data/flatpak/app:ro",
+        "--filesystem=xdg-data/flatpak/overrides:create",
         "--talk-name=org.gnome.Software"
     ],
     "cleanup": [
@@ -44,8 +44,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://source.puri.sm/Librem5/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz",
-                    "sha256": "138bec94e66d15a7a19350b65845d4529bcd969ea913ab3eb438f56fe47d5d37"
+                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.0.tar.xz",
+                    "sha256": "a9398582f47b7d729205d6eac0c068fef35aaf249fdd57eea3724f8518d26699"
                 }
             ]
         },
@@ -53,22 +53,22 @@
             "name": "appstream-glib",
             "buildsystem": "meson",
             "config-opts": [
-		"-Ddep11=false",
-		"-Dbuilder=false",
-		"-Drpm=false",
-		"-Dalpm=false",
-		"-Dfonts=false",
-		"-Dstemmer=false",
-		"-Dman=false",
-		"-Dstemmer=false",
-		"-Dgtk-doc=false",
-		"-Dintrospection=true"
+                "-Ddep11=false",
+                "-Dbuilder=false",
+                "-Drpm=false",
+                "-Dalpm=false",
+                "-Dfonts=false",
+                "-Dstemmer=false",
+                "-Dman=false",
+                "-Dstemmer=false",
+                "-Dgtk-doc=false",
+                "-Dintrospection=true"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_17.tar.gz",
-                    "sha256": "cb612c9e634275e574fa639737cf63711358cd10b9d0d377f70025653fefdd16"
+                    "url": "https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_18.tar.gz",
+                    "sha256": "73b8c10273c4cdd8f6de03c2524fedad64e34ccae08ee847dba804bb15461f6e"
                 }
             ]
         },
@@ -79,8 +79,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v1.6.2",
-                    "commit": "c3aaf6c8d10d61fb8a7dd13d42f999575b572a16"
+                    "tag": "v1.6.3",
+                    "commit": "156c43a747d70ed011ef22ff63ca570a493d3bfe"
                 }
             ]
         }
