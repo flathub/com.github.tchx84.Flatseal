@@ -44,8 +44,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.0.tar.xz",
-                    "sha256": "a9398582f47b7d729205d6eac0c068fef35aaf249fdd57eea3724f8518d26699"
+                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.2.tar.xz",
+                    "sha256": "3ad78d0594165c7e8150f662506d386552825e693aa3679744af96bd94dc1c2d"
                 }
             ]
         },
@@ -73,14 +73,26 @@
             ]
         },
         {
+            "name": "jasmine-gjs",
+            "buildsystem": "meson",
+            "cleanup": ["*"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/ptomato/jasmine-gjs/releases/download/2.6.4/jasmine-gjs-2.6.4.tar.xz",
+                    "sha256": "66f52852d14c81411e6a1cee04c78f313b3bdae44ee55bce3a9d116650f6a384"
+                }
+            ]
+        },
+        {
             "name": "flatseal",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v1.6.3",
-                    "commit": "156c43a747d70ed011ef22ff63ca570a493d3bfe"
+                    "tag": "v1.6.4",
+                    "commit": "1ba148b160cd15ba39e88c2005b49be56f58027d"
                 }
             ]
         }
