@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.tchx84.Flatseal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.38",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "com.github.tchx84.Flatseal",
@@ -27,28 +27,6 @@
         "*.a"
     ],
     "modules": [
-        {
-            "name": "libhandy",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dgtk_doc=false",
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false",
-                "-Dglade_catalog=disabled"
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.2.tar.xz",
-                    "sha256": "3ad78d0594165c7e8150f662506d386552825e693aa3679744af96bd94dc1c2d"
-                }
-            ]
-        },
         {
             "name": "appstream-glib",
             "buildsystem": "meson",
