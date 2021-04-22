@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.tchx84.Flatseal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.38",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "com.github.tchx84.Flatseal",
@@ -13,7 +13,8 @@
         "--filesystem=/var/lib/flatpak/app:ro",
         "--filesystem=xdg-data/flatpak/app:ro",
         "--filesystem=xdg-data/flatpak/overrides:create",
-        "--talk-name=org.gnome.Software"
+        "--talk-name=org.gnome.Software",
+        "--talk-name=org.freedesktop.impl.portal.PermissionStore"
     ],
     "cleanup": [
         "/include",
@@ -44,8 +45,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.2.tar.xz",
-                    "sha256": "3ad78d0594165c7e8150f662506d386552825e693aa3679744af96bd94dc1c2d"
+                    "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.1.tar.xz",
+                    "sha256": "411b4c6a4d5f9ed5e46594b4abb04c54af294e3242cf364942029f5e0b6f510b"
                 }
             ]
         },
@@ -73,26 +74,14 @@
             ]
         },
         {
-            "name": "jasmine-gjs",
-            "buildsystem": "meson",
-            "cleanup": ["*"],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/ptomato/jasmine-gjs/releases/download/2.6.4/jasmine-gjs-2.6.4.tar.xz",
-                    "sha256": "66f52852d14c81411e6a1cee04c78f313b3bdae44ee55bce3a9d116650f6a384"
-                }
-            ]
-        },
-        {
             "name": "flatseal",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v1.6.8",
-                    "commit": "a9bbdb0e21da927fded65664241d8de1445c1e59"
+                    "tag": "v1.7.0",
+                    "commit": "ca94f3f50a0ca30166838bdb8095a8a623caf3cf"
                 }
             ]
         }
