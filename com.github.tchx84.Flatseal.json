@@ -45,8 +45,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.1.tar.xz",
-                    "sha256": "411b4c6a4d5f9ed5e46594b4abb04c54af294e3242cf364942029f5e0b6f510b"
+                    "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.2.tar.xz",
+                    "sha256": "47ffd2865d02bd1ca579522deadd7e2f95362f1f202462fd5eeae2b81668b048",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libhandy",
+                        "stable-only": true
+                    }
                 }
             ]
         },
@@ -67,9 +72,14 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_18.tar.gz",
-                    "sha256": "73b8c10273c4cdd8f6de03c2524fedad64e34ccae08ee847dba804bb15461f6e"
+                    "type": "git",
+                    "url": "https://github.com/hughsie/appstream-glib",
+                    "tag": "appstream_glib_0_7_18",
+                    "commit": "705e8e2061e9c9ef741792b1de56c6529fb57082",   
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^appstream_glib_([\\d_]+)$"
+                    }                    
                 }
             ]
         },
@@ -81,7 +91,11 @@
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
                     "tag": "v1.7.1",
-                    "commit": "16f89f07886a51b46dd0dc3fb586036c6a5c41ff"
+                    "commit": "16f89f07886a51b46dd0dc3fb586036c6a5c41ff",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    } 
                 }
             ]
         }
