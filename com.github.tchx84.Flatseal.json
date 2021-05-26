@@ -29,28 +29,6 @@
     ],
     "modules": [
         {
-            "name": "libhandy",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dgtk_doc=false",
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false",
-                "-Dglade_catalog=disabled"
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.1.tar.xz",
-                    "sha256": "411b4c6a4d5f9ed5e46594b4abb04c54af294e3242cf364942029f5e0b6f510b"
-                }
-            ]
-        },
-        {
             "name": "appstream-glib",
             "buildsystem": "meson",
             "config-opts": [
@@ -80,8 +58,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v1.7.2",
-                    "commit": "0238b5d2d8db62e8c81db4f16f460b559564f032"
+                    "tag": "v1.7.3",
+                    "commit": "45be77b1ac8d77f18dcdc06e46f0527a0a52218a"
                 }
             ]
         }
