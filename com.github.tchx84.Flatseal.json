@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.tchx84.Flatseal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "com.github.tchx84.Flatseal",
@@ -46,8 +46,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_18.tar.gz",
-                    "sha256": "73b8c10273c4cdd8f6de03c2524fedad64e34ccae08ee847dba804bb15461f6e"
+                    "url": "https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.18.tar.xz",
+                    "sha256": "ca1ed22e3bde3912cb903aaa7de085d55771da454f1c0573fd9608e1de9c4002",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 14018,
+                        "url-template": "https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -59,7 +64,11 @@
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
                     "tag": "v1.7.4",
-                    "commit": "d6db7cf391285cb541a74e4525d949d9de571147"
+                    "commit": "d6db7cf391285cb541a74e4525d949d9de571147",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
                 }
             ]
         }
