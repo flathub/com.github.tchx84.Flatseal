@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.tchx84.Flatseal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "com.github.tchx84.Flatseal",
@@ -58,8 +58,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v1.7.4",
-                    "commit": "d6db7cf391285cb541a74e4525d949d9de571147"
+                    "tag": "v1.7.5",
+                    "commit": "d3f97d7dad6900afbce57547b530bef04aaca9e5"
                 }
             ]
         }
