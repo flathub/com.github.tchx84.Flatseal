@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.tchx84.Flatseal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "com.github.tchx84.Flatseal",
@@ -29,37 +29,14 @@
     ],
     "modules": [
         {
-            "name": "appstream-glib",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Ddep11=false",
-                "-Dbuilder=false",
-                "-Drpm=false",
-                "-Dalpm=false",
-                "-Dfonts=false",
-                "-Dstemmer=false",
-                "-Dman=false",
-                "-Dstemmer=false",
-                "-Dgtk-doc=false",
-                "-Dintrospection=true"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_18.tar.gz",
-                    "sha256": "73b8c10273c4cdd8f6de03c2524fedad64e34ccae08ee847dba804bb15461f6e"
-                }
-            ]
-        },
-        {
             "name": "flatseal",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v1.8.0",
-                    "commit": "562ddec1b12c2a41c64e08daedf7576681f41345"
+                    "tag": "v1.8.1",
+                    "commit": "bea3ec6c26d13cd58ae82ec8182ad1762aabeed7"
                 }
             ]
         }
