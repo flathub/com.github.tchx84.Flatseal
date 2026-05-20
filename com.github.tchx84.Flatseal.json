@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.tchx84.Flatseal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "com.github.tchx84.Flatseal",
@@ -16,17 +16,6 @@
         "--talk-name=org.gnome.Software",
         "--talk-name=org.freedesktop.impl.portal.PermissionStore"
     ],
-    "cleanup": [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
     "modules": [
         {
             "name": "flatseal",
@@ -35,8 +24,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tchx84/Flatseal.git",
-                    "tag": "v2.4.0",
-                    "commit": "4d34c0c3006ac5e80a0e61b6e073f010aba44179"
+                    "tag": "v2.4.1",
+                    "commit": "3516a94d25e9f9632dae2f78fb604af1e5b14981"
                 }
             ]
         }
